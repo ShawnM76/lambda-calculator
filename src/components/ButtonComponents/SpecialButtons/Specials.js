@@ -8,15 +8,15 @@ import { specials } from '../../../data';
 const Specials = props => {
   // STEP 2 - add the imported data to state
   const [specialsState, setSpecialsState] = useState(specials)
-  console.log('specialsState', operatorsState);
+  
   return (
     <div>
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
-       {specialsState.map((number, index) => {
-         <SpecialButton number={number} key={index} />
-       })}
+       {specialsState.map((number, index) => (
+         <SpecialButton obj={number} key={index} />
+       ))}
     </div>
   );
 };

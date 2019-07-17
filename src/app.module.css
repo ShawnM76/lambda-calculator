@@ -1,0 +1,11 @@
+.calc {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ca003f;
+    padding: 2%;
+    border-radius: 13px;
+}
+
+.flex {
+    display: flex;
+}
